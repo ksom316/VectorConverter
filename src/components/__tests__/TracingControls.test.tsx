@@ -25,7 +25,7 @@ const numberField = (label: string) => screen.getByLabelText(label) as HTMLInput
 const slider = (label: string) => screen.getByLabelText(`${label} slider`) as HTMLInputElement;
 
 const NUMERIC = [
-  { label: "Black/white threshold", key: "threshold", start: 128, max: 255 },
+  { label: "Black/white threshold", key: "threshold", start: 175, max: 255 },
   { label: "Noise reduction", key: "noiseReduction", start: 1, max: 10 },
   { label: "Smoothing", key: "smoothing", start: 4, max: 10 },
   { label: "Detail preservation", key: "detail", start: 6, max: 10 },

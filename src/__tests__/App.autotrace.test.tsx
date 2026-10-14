@@ -67,7 +67,7 @@ describe("App: automatic retracing", () => {
     const user = userEvent.setup();
     await uploadDrawing(user);
     await waitFor(() => expect(trace).toHaveBeenCalledTimes(1));
-    expect(pending[0].settings).toEqual({ threshold: 128, autoThreshold: false, noiseReduction: 1, smoothing: 4, detail: 6 });
+    expect(pending[0].settings).toEqual({ threshold: 175, autoThreshold: false, noiseReduction: 1, smoothing: 4, detail: 6 });
     expect(screen.getByRole("status", { name: "" })).toBeTruthy();
     expect(screen.queryByRole("button", { name: /generate vector/i })).toBeNull();
 
@@ -108,7 +108,7 @@ describe("App: automatic retracing", () => {
 
     await user.click(screen.getByRole("button", { name: "Reset to defaults" }));
     await waitFor(() => expect(trace).toHaveBeenCalledTimes(3), { timeout: 2000 });
-    expect(pending[2].settings.threshold).toBe(128);
+    expect(pending[2].settings.threshold).toBe(175);
   });
 
   it("never lets a slow, superseded response overwrite the newer preview", async () => {

@@ -29,7 +29,7 @@ export interface TracingSettings {
 }
 
 export const DEFAULT_TRACING_SETTINGS: TracingSettings = {
-  threshold: 128,
+  threshold: 175,
   autoThreshold: false,
   noiseReduction: 1,
   smoothing: 4,

@@ -74,7 +74,7 @@ beforeEach(() => {
 describe("default tracing settings", () => {
   it("defaults noise reduction to 1 and leaves every other default unchanged", () => {
     expect(DEFAULT_TRACING_SETTINGS).toEqual({
-      threshold: 128,
+      threshold: 175,
       autoThreshold: false,
       noiseReduction: 1,
       smoothing: 4,
