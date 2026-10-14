@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <title>Vector Converter</title>
+  <rect width="64" height="64" rx="14" fill="#0f1115"/>
+  <rect x="1.5" y="1.5" width="61" height="61" rx="12.5" fill="none" stroke="#1e293b" stroke-width="3"/>
+  <!-- traced path: a polyline with editable anchor nodes -->
+  <path d="M12 44 L24 18 L40 38 L52 16" fill="none" stroke="#818cf8" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <g fill="#0f1115" stroke="#e0e7ff" stroke-width="3">
+    <rect x="8" y="40" width="8" height="8" rx="1.5"/>
+    <rect x="20" y="14" width="8" height="8" rx="1.5"/>
+    <rect x="36" y="34" width="8" height="8" rx="1.5"/>
+    <rect x="48" y="12" width="8" height="8" rx="1.5"/>
+  </g>
+</svg>
